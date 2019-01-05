@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="630.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <VBox prefHeight="630.0" prefWidth="730.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#refreshButtonOnAction" prefHeight="42.0" prefWidth="109.0" text="ODŚWIEŻ&#10;BAZĘ DANYCH" textAlignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#changeResponsibilityButtonOnAction" text="PRZEŁÓŻ&#10;OBOWIĄZEK" textAlignment="CENTER" />
+                  <Button mnemonicParsing="false" onAction="#cancelResponsibilityButtonOnAction" text="ODWOŁAJ &#10;OBOWIĄZEK" textAlignment="CENTER" />
+                  <Button mnemonicParsing="false" onAction="#addAdnotationButtonOnAction" text="DODAJ&#10;ADNOTACJĘ" textAlignment="CENTER" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <GridPane prefHeight="600.0" prefWidth="700.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextArea prefHeight="100.0" prefWidth="100.0" />
+                  <TextArea fx:id="A1" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="1" />
+                  <TextArea fx:id="A2" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2" />
+                  <TextArea fx:id="A3" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="3" />
+                  <TextArea fx:id="A4" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="4" />
+                  <TextArea fx:id="A5" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="5" />
+                  <TextArea fx:id="A6" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="6" />
+                  <TextArea fx:id="B0" prefHeight="100.0" prefWidth="100.0" GridPane.rowIndex="1" />
+                  <TextArea fx:id="B1" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextArea fx:id="B2" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextArea fx:id="B3" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextArea fx:id="B4" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <TextArea fx:id="B5" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <TextArea fx:id="B6" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                  <TextArea fx:id="C0" prefHeight="100.0" prefWidth="100.0" GridPane.rowIndex="2" />
+                  <TextArea fx:id="C1" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextArea fx:id="C3" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextArea fx:id="C4" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <TextArea fx:id="C5" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                  <TextArea fx:id="C6" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                  <TextArea fx:id="D0" prefHeight="100.0" prefWidth="100.0" GridPane.rowIndex="3" />
+                  <TextArea fx:id="D1" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextArea fx:id="C2" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextArea fx:id="D3" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <TextArea fx:id="D4" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <TextArea fx:id="D5" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <TextArea fx:id="D6" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                  <TextArea fx:id="A0" prefHeight="100.0" prefWidth="100.0" />
+                  <TextArea fx:id="E0" prefHeight="100.0" prefWidth="100.0" GridPane.rowIndex="4" />
+                  <TextArea fx:id="E1" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextArea fx:id="E2" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <TextArea fx:id="E3" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <TextArea fx:id="E4" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <TextArea fx:id="E5" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                  <TextArea fx:id="E6" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                  <TextArea fx:id="D2" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextArea fx:id="F0" prefHeight="100.0" prefWidth="100.0" GridPane.rowIndex="5" />
+                  <TextArea fx:id="F1" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextArea fx:id="F2" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <TextArea fx:id="F3" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <TextArea fx:id="F4" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <TextArea fx:id="F5" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                  <TextArea fx:id="F6" prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
